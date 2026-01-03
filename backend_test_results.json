@@ -1,0 +1,123 @@
+{
+  "timestamp": "2026-01-03T11:02:11.838130",
+  "total_tests": 23,
+  "passed_tests": 23,
+  "success_rate": 100.0,
+  "test_details": [
+    {
+      "test": "User Signup",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "User Login",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Current User",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get All Cities",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get All Activities",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Create Trip",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get All Trips",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Trip by ID",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Update Trip",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Create Stop",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get All Stops",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Add Activity to Stop",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Stop Activities",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Add Trip Cost",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Trip Costs",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get User Profile",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Update User Profile",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Trip for Share Token",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Get Shared Trip",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Delete Trip Activity",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Delete Trip Cost",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Delete Stop",
+      "success": true,
+      "details": ""
+    },
+    {
+      "test": "Delete Trip",
+      "success": true,
+      "details": ""
+    }
+  ]
+}

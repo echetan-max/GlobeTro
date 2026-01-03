@@ -1,0 +1,204 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Voyager",
+      "persona": "The Modern Explorer",
+      "vibe": "Adventurous, Organized, Inspiring, Fluid",
+      "principles": [
+        "Fusion over Imitation: Mix editorial magazine aesthetics with productivity tool precision",
+        "Emotion First: Every interaction should feel like the start of a journey",
+        "Content is King: High-quality imagery takes center stage; UI recedes",
+        "Zoom In: Focus on the details of the itinerary",
+        "Negative Space: Let the travel dreams breathe"
+      ]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-none",
+        "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed",
+        "caption": "text-sm font-medium tracking-wide uppercase text-muted-foreground"
+      },
+      "usage": {
+        "headings": "Use Playfair Display for all major section headers to evoke a premium travel magazine feel.",
+        "body": "Use Manrope for all UI elements, itineraries, and data displays for maximum legibility.",
+        "interactive": "Buttons and navigation links should use Manrope with slightly increased tracking."
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "name": "Sunset Orange",
+          "value": "#F97316",
+          "tailwind": "orange-500",
+          "usage": "Primary CTAs, Highlights, Active States"
+        },
+        "secondary": {
+          "name": "Deep Ocean Teal",
+          "value": "#0F766E",
+          "tailwind": "teal-700",
+          "usage": "Branding, Sub-headers, Accents"
+        },
+        "background": {
+          "light": "#FAFAF9",
+          "light_tailwind": "stone-50",
+          "dark": "#020617",
+          "dark_tailwind": "slate-950",
+          "usage": "Main application background. Avoid pure white."
+        },
+        "surface": {
+          "light": "#FFFFFF",
+          "dark": "#0F172A",
+          "usage": "Cards, Modals, Dropdowns"
+        },
+        "text": {
+          "primary": "foreground",
+          "secondary": "muted-foreground",
+          "accent": "orange-600"
+        }
+      },
+      "gradients": {
+        "hero": "bg-gradient-to-b from-transparent to-stone-50/90 dark:to-slate-950/90",
+        "card_overlay": "bg-gradient-to-t from-black/80 via-black/40 to-transparent"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container": "container mx-auto px-4 md:px-6 lg:px-8",
+        "section": "py-12 md:py-24",
+        "card_padding": "p-6 md:p-8"
+      },
+      "grids": {
+        "dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+        "bento_hero": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-8",
+        "itinerary": "grid grid-cols-1 lg:grid-cols-12 gap-8"
+      },
+      "border_radius": {
+        "card": "rounded-xl",
+        "button": "rounded-full",
+        "image": "rounded-2xl"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-orange-500 hover:bg-orange-600 text-white rounded-full px-8 py-6 font-medium transition-all hover:scale-105 shadow-lg shadow-orange-500/20",
+        "secondary": "bg-white dark:bg-slate-800 border border-stone-200 dark:border-slate-700 hover:bg-stone-100 dark:hover:bg-slate-700 text-foreground rounded-full px-6 py-4 transition-all",
+        "ghost": "hover:bg-stone-100 dark:hover:bg-slate-800 text-foreground rounded-full px-4 py-2"
+      },
+      "cards": {
+        "trip_card": "group relative overflow-hidden rounded-2xl bg-white dark:bg-slate-900 border border-stone-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1",
+        "activity_card": "flex flex-col gap-2 p-4 rounded-xl bg-stone-50 dark:bg-slate-800/50 border border-stone-100 dark:border-slate-700 hover:border-orange-200 dark:hover:border-orange-900 transition-colors",
+        "stat_card": "p-6 rounded-xl bg-white dark:bg-slate-900 border border-stone-100 dark:border-slate-800 shadow-sm"
+      },
+      "inputs": {
+        "default": "h-12 rounded-lg border-stone-200 dark:border-slate-700 bg-transparent focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all"
+      }
+    },
+    "motion": {
+      "transitions": {
+        "default": "transition-all duration-300 ease-out",
+        "slow": "transition-all duration-700 ease-in-out"
+      },
+      "animations": {
+        "fade_in": "animate-in fade-in duration-500",
+        "slide_up": "animate-in slide-in-from-bottom-4 duration-500",
+        "hover_lift": "hover:-translate-y-1 hover:shadow-lg duration-300"
+      }
+    },
+    "assets": {
+      "images": {
+        "hero": [
+          {
+            "url": "https://images.unsplash.com/photo-1732808460864-b8e5eb489a52?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxzY2VuaWMlMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnMlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzY3NDI4ODE4fDA&ixlib=rb-4.1.0&q=85",
+            "alt": "Sunset over water",
+            "category": "hero_background"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1623784373624-26fb62d3076d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxzY2VuaWMlMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnMlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzY3NDI4ODE4fDA&ixlib=rb-4.1.0&q=85",
+            "alt": "Spring waves at sunrise",
+            "category": "destination_card"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1673505413397-0cd0dc4f5854?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxzY2VuaWMlMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnMlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzY3NDI4ODE4fDA&ixlib=rb-4.1.0&q=85",
+            "alt": "Everest base camp",
+            "category": "adventure_highlight"
+          }
+        ],
+        "activities": [
+          {
+            "url": "https://images.unsplash.com/photo-1683009427042-e094996f9780?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHx0cmF2ZWxlcnMlMjBoaWtpbmclMjBleHBsb3JpbmclMjBhZHZlbnR1cmV8ZW58MHx8fHwxNzY3NDI5MjY2fDA&ixlib=rb-4.1.0&q=85",
+            "alt": "Hiking in canyon",
+            "category": "activity_hiking"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1605915508297-03390a7853f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHw0fHx0cmF2ZWxlcnMlMjBoaWtpbmclMjBleHBsb3JpbmclMjBhZHZlbnR1cmV8ZW58MHx8fHwxNzY3NDI5MjY2fDA&ixlib=rb-4.1.0&q=85",
+            "alt": "Man with backpack near waterfall",
+            "category": "activity_waterfall"
+          }
+        ],
+        "avatars": [
+          {
+            "url": "https://images.unsplash.com/photo-1658288098101-84f074c292a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwdHJhdmVsZXJzJTIwcG9ydHJhaXRzJTIwc21pbGluZ3xlbnwwfHx8fDE3Njc0MjkyNjh8MA&ixlib=rb-4.1.0&q=85",
+            "alt": "Smiling man",
+            "category": "user_avatar_1"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1595956936239-4cad0fa009e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxkaXZlcnNlJTIwdHJhdmVsZXJzJTIwcG9ydHJhaXRzJTIwc21pbGluZ3xlbnwwfHx8fDE3Njc0MjkyNjh8MA&ixlib=rb-4.1.0&q=85",
+            "alt": "Man in plaid shirt",
+            "category": "user_avatar_2"
+          }
+        ]
+      },
+      "icons": "Use Lucide React icons. Stroke width 1.5px for a refined look."
+    }
+  },
+  "implementation_guide": {
+    "general_rules": [
+      "Use 'stone-50' (light) and 'slate-950' (dark) for backgrounds, never pure white/black.",
+      "Always add 'data-testid' to interactive elements.",
+      "Use 'sonner' for toast notifications.",
+      "Do not use 'transition-all'. Specify properties like 'transition-colors' or 'transition-transform'.",
+      "Ensure all images have 'object-cover' and proper aspect ratios."
+    ],
+    "pages": {
+      "dashboard": {
+        "layout": "Bento Grid (Mode A)",
+        "key_elements": [
+          "Hero section with 'Sunset over water' image and parallax effect",
+          "Recent trips grid using 'Trip Card' component",
+          "Quick actions row with pill-shaped buttons"
+        ]
+      },
+      "itinerary_builder": {
+        "layout": "Split View (Left: List/Timeline, Right: Map)",
+        "key_elements": [
+          "Drag-and-drop activity list",
+          "Budget progress bar (sticky top)",
+          "Map integration (placeholder or library)"
+        ]
+      },
+      "landing": {
+        "layout": "Single column, high impact",
+        "key_elements": [
+          "Full-screen hero with large Playfair Display typography",
+          "Feature grid with glassmorphism effects",
+          "Testimonials carousel using avatar images"
+        ]
+      }
+    },
+    "universal_guidelines": [
+      "Avoid generic 'AI slop' designs. Be bold with spacing (p-8, p-12).",
+      "Use glassmorphism for sticky headers: 'bg-white/70 backdrop-blur-xl border-b border-white/20'.",
+      "Never center text by default. Use left alignment for readability.",
+      "Use 'Playfair Display' for all H1-H3 headings. Use 'Manrope' for body.",
+      "Primary color is Orange-500. Use it sparingly for high-impact actions."
+    ]
+  }
+}
